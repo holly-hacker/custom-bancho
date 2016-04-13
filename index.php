@@ -47,7 +47,7 @@ if (!isset($header['osu-token'])) {
 		$accuracy = GetAccuracyFromId($user['id']);
 		$playCount = GetPlaycountFromId($user['id']);
 		//5,000 / 3 * (4n^3 - 3n^2 - n) + 1.25 * 1.8^(n - 60)
-		$experience = 0;//$totalscore;	//ACTUALLY? NVM
+		$experience = 0;//$totalscore;	//actually, nvm
 
 		$toprint = array_merge(
 			CreatePacket(92, 0),	//ban status/time
